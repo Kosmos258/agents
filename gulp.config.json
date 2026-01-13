@@ -1,0 +1,22 @@
+{
+  "basePaths": {
+    "entry": "src",
+    "build": "build"
+  },
+  "excludePaths": [
+    "**/test.ts"
+  ],
+  "filePatterns": {
+    "ts": [
+      "/**/*.ts"
+    ],
+    "other": [
+      "**/*.js",
+      "**/*.bs",
+      "**/*.html"
+    ]
+  },
+  "work_mode": "server_objects",
+  "is_file": true,
+  "is_need_deploy": false
+}
