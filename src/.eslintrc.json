@@ -47,7 +47,7 @@
     "space-before-function-paren": ["warn", "never"],
     "allowAllPropertiesOnSameLine": "off",
     "object-property-newline": "warn",
-    "no-alert": "error",
+    "no-alert": "off",
     "no-eval": "error"
   }
 }
