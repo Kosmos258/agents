@@ -6,13 +6,13 @@ interface IError {
 
 /* --- system --- */
 const GLOBAL = {
-	IS_DEBUG: tools_web.is_true(Param.IS_DEBUG),
+	IS_DEBUG: tools_web.is_true(Param.IS_DEBUG)
 };
 
 const logConfig = {
 	code: "globex_log",
 	type: "AGENT",
-	agentId: "7216471226107953028",
+	agentId: "7216471226107953028"
 };
 
 EnableLog(logConfig.code, GLOBAL.IS_DEBUG);
@@ -63,7 +63,7 @@ function getBills(): any {
 	}
 }
 
-function closeBill(): void {
+function closeBill() {
 	try {
 		const bills = getBills();
 
