@@ -67,7 +67,7 @@ function HttpError(source: string, errorObject: IError) {
 }
 
 /* --- logic --- */
-function getQuestionnairesAndUpdateDate(): IQuestionnaires[] {
+function getQuestionnairesAndUpdateDate() {
 	try {
 		const questionnaires = selectAll<IQuestionnaires>(`
                 SELECT 
@@ -95,7 +95,6 @@ function getQuestionnairesAndUpdateDate(): IQuestionnaires[] {
 			}
 		}
 
-		return;
 	} catch (e) {
 		HttpError("getQuestionnairesAndUpdateDate", e);
 	}
