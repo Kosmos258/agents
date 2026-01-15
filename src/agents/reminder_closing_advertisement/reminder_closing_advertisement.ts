@@ -76,7 +76,7 @@ function formatDateUsingStringMethods(isoDate: string): string {
 	return `${day}.${month}.${year}`;
 }
 
-function getAdvertisementAndSendNotif(): IAdvertisement[] {
+function getAdvertisementAndSendNotif() {
 	try {
 		const advertisements = selectAll<IAdvertisement>(`
             SELECT
@@ -118,7 +118,6 @@ function getAdvertisementAndSendNotif(): IAdvertisement[] {
 			}
 		}
 
-		return;
 	} catch (e) {
 		HttpError("getAdvertisementAndSendNotif", e);
 	}
